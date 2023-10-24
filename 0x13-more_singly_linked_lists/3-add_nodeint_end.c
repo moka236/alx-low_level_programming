@@ -1,9 +1,11 @@
 #include "lists.h"
 
 /**
- * add_nodeint_end - add a new node at the end of a listint_t list.
+ * add_nodeint_end - add a new node at the end
+ * of a linked list
  * @head: head of a list.
  * @n: n element.
+ *
  * Return: address of the new element.or NUll if it failed.
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
@@ -27,7 +29,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	}
 	else
 	{
-		while (temp->next!= NULL)
+		while (temp->next != NULL)
 		{
 			temp = temp->next;
 		}
@@ -35,4 +37,4 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	}
 
 	return (*head);
-}
+}i
