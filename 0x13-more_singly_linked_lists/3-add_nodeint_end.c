@@ -4,8 +4,7 @@
  * add_nodeint_end - add a new node at the end of a listint_t list.
  * @head: head of a list.
  * @n: n element.
- *
- * Return: address of the new element.or  NUll if it failed.
+ * Return: address of the new element.or NUll if it failed.
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
@@ -19,8 +18,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	if (new == NULL)
 		return (NULL);
 
-	new->n = n;
-	new->next = NULL;
+	new -> n = n;
+	new -> next = NULL;
 	temp = *head;
 	if (*head == NULL)
 	{
@@ -30,7 +29,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	{
 		while (temp -> next != NULL)
 		{
-			temp = temp->next;
+			temp = temp -> next;
 		}
 		temp -> next = new;
 	}
