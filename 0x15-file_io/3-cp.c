@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 		if (nuchars == -1)
 			error_file(-1, 0, argv);
 		nr = write(file_to, bf, nuchars);
-		if (nwr == -1)
+		if (nr == -1)
 			error_file(0, -1, argv);
 	}
 
