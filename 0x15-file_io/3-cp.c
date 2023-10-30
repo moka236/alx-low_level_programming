@@ -23,6 +23,7 @@ void error_file(int file_from, int file_to, char *argv[])
 }
 
 /**
+ * main - program that copies the content of a file to another file.
  * @argc: number of arguments.
  * @argv: arguments vector.
  * Return: Always 0.
